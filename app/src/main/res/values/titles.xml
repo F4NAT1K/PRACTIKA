@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bazName">
+        Брянский автомобильный завод
+    </string>
+    <string name="belazName">
+        Белорусский автомобильный завод
+    </string>
+    <string name="jaazName">
+        Ярославский автомобильный завод
+    </string>
+    <string name="vazName">
+        Волжский автомобильный завод
+    </string>
+    <string name="gazName">
+        Горьковский автомобильный завод
+    </string>
+    <string name="erazName">
+        Ереванский автомобильный завод
+    </string>
+    <string name="zazName">
+        Запорожский автомобильный завод
+    </string>
+    <string name="zilName">
+        Завод имени И.А. Лихачева
+    </string>
+    <string name="ziuName">
+        Завод имени Урицкого
+    </string>
+    <string name="ijName">
+        Ижевский автомобильный завод
+    </string>
+    <string name="kavzName">
+        Курганский автобусный завод
+    </string>
+    <string name="kazName">
+        Кутаисский автомобильный завод
+    </string>
+    <string name="seazName">
+        Серпуховский автомобильный завод
+    </string>
+    <string name="hadiName">
+        Лаборатория скоростных автомобилей ХАДИ
+    </string>
+    <string name="kamazName">
+        Камский автомобильный завод
+    </string>
+    <string name="krazName">
+        Кременчугский автомобильный завод
+    </string>
+    <string name="lazName">
+        Львовский автобусный завод
+    </string>
+    <string name="liazName">
+        Ликинский автобусный завод
+    </string>
+    <string name="luazName">
+        Луцкий автомобильный завод
+    </string>
+    <string name="mazName">
+        Минский автомобильный завод
+    </string>
+    <string name="mzktName">
+        Минский завод колёсных тягачей
+    </string>
+    <string name="moazName">
+        Могилевский автомобильный завод
+    </string>
+    <string name="moskvichName">
+        Московский автосборочный завод
+    </string>
+    <string name="namiName">
+        Центральный научно-исследовательский автомобильный и автомоторный институт
+    </string>
+    <string name="pazName">
+        Павловский автобусный завод
+    </string>
+    <string name="rafName">
+        Рижская автобусная фабрика
+    </string>
+    <string name="uazName">
+        Ульяновский автомобильный завод
+    </string>
+    <string name="uralName">
+        Уральский автомобильный завод
+    </string>
+</resources>

@@ -1,0 +1,186 @@
+package com.example.carsoftheussr
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import android.widget.ImageView
+import android.widget.TextView
+
+class model : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_model)
+        var model = intent.getStringExtra("model")
+        setTitle(model)
+        val carInfo = findViewById<TextView>(R.id.historyCar)
+        carInfo.text = resources.getString(resources.getIdentifier("$model", "string", packageName))
+        var picture = findViewById<ImageView>(R.id.carImage)
+        Log.d("debag", "$model")
+        when(model)
+        {
+            "БАЗ930" -> picture.setImageResource(R.drawable.baz930)
+            "БАЗ931" -> picture.setImageResource(R.drawable.baz931)
+
+            "БелАЗ525" -> picture.setImageResource((R.drawable.belaz525))
+            "БелАЗ540" -> picture.setImageResource((R.drawable.belaz540))
+            "БелАЗ548" -> picture.setImageResource((R.drawable.belaz548))
+            "БелАЗ549" -> picture.setImageResource((R.drawable.belaz549))
+            "БелАЗ6411" -> picture.setImageResource((R.drawable.belaz6411))
+            "БелАЗ7413" -> picture.setImageResource((R.drawable.belaz7413))
+
+            "ВАЗ2101" -> picture.setImageResource((R.drawable.vaz2101))
+            "ВАЗ2102" -> picture.setImageResource((R.drawable.vaz2102))
+            "ВАЗ2103" -> picture.setImageResource((R.drawable.vaz2103))
+            "ВАЗ2104" -> picture.setImageResource((R.drawable.vaz2104))
+            "ВАЗ2105" -> picture.setImageResource((R.drawable.vaz2105))
+            "ВАЗ2106" -> picture.setImageResource((R.drawable.vaz2106))
+            "ВАЗ2107" -> picture.setImageResource((R.drawable.vaz2107))
+            "ВАЗ2108" -> picture.setImageResource((R.drawable.vaz2108))
+            "ВАЗ2109" -> picture.setImageResource((R.drawable.vaz2109))
+            "ВАЗ21099" -> picture.setImageResource((R.drawable.vaz21099))
+            "ВАЗ1111" -> picture.setImageResource((R.drawable.vaz1111))
+            "ВАЗ2121" -> picture.setImageResource((R.drawable.vaz2121))
+
+            "ГАЗМ20Победа" -> picture.setImageResource((R.drawable.gazm20win))
+            "ГАЗ21" -> picture.setImageResource((R.drawable.gaz21))
+            "ГАЗ22" -> picture.setImageResource((R.drawable.gaz22))
+            "ГАЗ23" -> picture.setImageResource((R.drawable.gaz23))
+            "ГАЗ24" -> picture.setImageResource((R.drawable.gaz24))
+            "ГАЗ12ЗИМ" -> picture.setImageResource((R.drawable.gaz12zim))
+            "ГАЗ1213" -> picture.setImageResource((R.drawable.gaz1213))
+            "ГАЗ13" -> picture.setImageResource((R.drawable.gaz13))
+
+            "ЕрАЗ762" -> picture.setImageResource((R.drawable.eraz762))
+            "ЕрАЗ763" -> picture.setImageResource((R.drawable.eraz763))
+            "ЕрАЗ3730" -> picture.setImageResource((R.drawable.eraz3730))
+
+            "ЗАЗ965" -> picture.setImageResource((R.drawable.zaz965))
+            "ЗАЗ966" -> picture.setImageResource((R.drawable.zaz966))
+            "ЗАЗ967" -> picture.setImageResource((R.drawable.zaz967))
+            "ЗАЗ968" -> picture.setImageResource((R.drawable.zaz968))
+            "ЗАЗ1102" -> picture.setImageResource((R.drawable.zaz1102))
+            "ЗАЗ970" -> picture.setImageResource((R.drawable.zaz970))
+
+            "УРАЛЗИС355М" -> picture.setImageResource((R.drawable.uralzis355m))
+            "УРАЛ355М" -> picture.setImageResource((R.drawable.ural355m))
+            "УРАЛ375" -> picture.setImageResource((R.drawable.ural375))
+            "УРАЛ377" -> picture.setImageResource((R.drawable.ural377))
+            "УРАЛ4320" -> picture.setImageResource((R.drawable.ural4320))
+            "УРАЛ4322А" -> picture.setImageResource((R.drawable.ural4322a))
+
+            "ЗиС127" -> picture.setImageResource((R.drawable.zis127))
+            "ЗиС150" -> picture.setImageResource((R.drawable.zis150))
+            "ЗиС154" -> picture.setImageResource((R.drawable.zis154))
+            "ЗиС155" -> picture.setImageResource((R.drawable.zis155))
+            "ЗиЛ111" -> picture.setImageResource((R.drawable.zil111))
+            "ЗиЛ111ГДВ" -> picture.setImageResource((R.drawable.zil111d))
+            "ЗиЛ112С" -> picture.setImageResource((R.drawable.zil112s))
+            "ЗиЛ114" -> picture.setImageResource((R.drawable.zil114))
+            "ЗиЛ117" -> picture.setImageResource((R.drawable.zil117))
+            "ЗиЛ130" -> picture.setImageResource((R.drawable.zil130))
+            "ЗиЛ157" -> picture.setImageResource((R.drawable.zil157))
+            "ЗиЛ131" -> picture.setImageResource((R.drawable.zil131))
+            "ЗиЛ115В" -> picture.setImageResource((R.drawable.zil115v))
+
+            "ЯАЗ210" -> picture.setImageResource((R.drawable.yaaz210))
+            "ЯАЗ214" -> picture.setImageResource((R.drawable.yaaz214))
+
+            "ИЖЗима1" -> picture.setImageResource((R.drawable.ijzima1))
+            "ИЖ2125" -> picture.setImageResource((R.drawable.ij2125))
+            "ИЖТЭ" -> picture.setImageResource((R.drawable.ijte))
+            "ИЖ13" -> picture.setImageResource((R.drawable.ij13))
+            "ИЖ14" -> picture.setImageResource((R.drawable.ij14))
+            "ИЖ2715" -> picture.setImageResource((R.drawable.ij2715))
+            "ИЖ19" -> picture.setImageResource((R.drawable.ij19))
+            "ИЖ2126СерияТ" -> picture.setImageResource((R.drawable.ij2126))
+            "ИЖ2126СерияО" -> picture.setImageResource((R.drawable.ij2126orbita))
+            "ИЖ2126Ода" -> picture.setImageResource((R.drawable.ij2126oda))
+
+            "КамАЗ4310" -> picture.setImageResource((R.drawable.kamaz4310))
+            "КамАЗ5320" -> picture.setImageResource((R.drawable.kamaz5320))
+            "КамАЗ55111" -> picture.setImageResource((R.drawable.kamaz55111))
+            "КамАЗ5325" -> picture.setImageResource((R.drawable.kamaz5325))
+
+            "СМЗС1Л" -> picture.setImageResource((R.drawable.smzs1l))
+            "СМЗС3А" -> picture.setImageResource((R.drawable.smzs3a))
+
+            "КАвЗ654" -> picture.setImageResource((R.drawable.kavz654))
+            "КАвЗ663" -> picture.setImageResource((R.drawable.kavz663))
+            "КАвЗ664" -> picture.setImageResource((R.drawable.kavz664))
+            "КАвЗ985" -> picture.setImageResource((R.drawable.kavz985))
+
+            "КрАЗ214" -> picture.setImageResource((R.drawable.kraz214))
+            "КрАЗ219" -> picture.setImageResource((R.drawable.kraz219))
+            "КрАЗ222" -> picture.setImageResource((R.drawable.kraz222))
+            "КрАЗ256Б" -> picture.setImageResource((R.drawable.kraz256b))
+            "КрАЗ256Б1030" -> picture.setImageResource((R.drawable.kraz256b1030))
+            "КрАЗ257" -> picture.setImageResource((R.drawable.kraz257))
+            "КрАЗ260" -> picture.setImageResource((R.drawable.kraz260))
+            "КрАЗЧР3120" -> picture.setImageResource((R.drawable.krazcr3120))
+            "КрАЗЧР3130" -> picture.setImageResource((R.drawable.krazcr3130))
+
+            "ЛАЗ692" -> picture.setImageResource((R.drawable.laz692))
+            "ЛАЗ695" -> picture.setImageResource((R.drawable.laz695))
+            "ЛАЗ695Т" -> picture.setImageResource((R.drawable.laz695t))
+            "ЛАЗ695Н" -> picture.setImageResource((R.drawable.laz695n))
+            "ЛАЗ695М" -> picture.setImageResource((R.drawable.laz695m))
+            "ЛАЗ695Д" -> picture.setImageResource((R.drawable.laz695d))
+            "ЛАЗ695Д11" -> picture.setImageResource((R.drawable.laz695d11))
+            "ЛАЗ695Е" -> picture.setImageResource((R.drawable.laz695e))
+            "ЛАЗ4202" -> picture.setImageResource((R.drawable.laz4202))
+
+            "ЛуАЗ967" -> picture.setImageResource((R.drawable.luaz967))
+            "ЛуАЗ969" -> picture.setImageResource((R.drawable.luaz969))
+
+            "МАЗ502" -> picture.setImageResource((R.drawable.maz502))
+            "МАЗ500" -> picture.setImageResource((R.drawable.maz500))
+            "МАЗ5432" -> picture.setImageResource((R.drawable.maz5432))
+
+            "МЗМА400" -> picture.setImageResource((R.drawable.mzma400))
+            "Москвич40120" -> picture.setImageResource((R.drawable.moskvich40120))
+            "Москвич402" -> picture.setImageResource((R.drawable.moskvich402))
+            "Москвич403" -> picture.setImageResource((R.drawable.moskvich403))
+            "Москвич407" -> picture.setImageResource((R.drawable.moskvich407))
+            "Москвич408" -> picture.setImageResource((R.drawable.moskvich408))
+            "Москвич412" -> picture.setImageResource((R.drawable.moskvich412))
+            "Москвич423Н" -> picture.setImageResource((R.drawable.moskvich423n))
+            "Москвич2140" -> picture.setImageResource((R.drawable.moskvich2140))
+            "Москвич2141" -> picture.setImageResource((R.drawable.moskvich2141))
+            "Moskvitch1600sl" -> picture.setImageResource((R.drawable.moskvich1600sl))
+
+            "ПобедаНАМИ" -> picture.setImageResource((R.drawable.pobedanami))
+            "НАМИ013" -> picture.setImageResource((R.drawable.nami013))
+            "НАМИ048" -> picture.setImageResource((R.drawable.nami048))
+            "НАМИ059" -> picture.setImageResource((R.drawable.nami059))
+            "СМЗНАМИ086" -> picture.setImageResource((R.drawable.smznami086))
+            "НАМИ0100" -> picture.setImageResource((R.drawable.nami0100))
+            "НАМИ0107" -> picture.setImageResource((R.drawable.nami0107))
+            "НАМИ0137" -> picture.setImageResource((R.drawable.nami0137))
+
+            "ГЗА651" -> picture.setImageResource((R.drawable.paz651))
+            "ГЗА653" -> picture.setImageResource((R.drawable.paz653))
+            "ПАЗ652" -> picture.setImageResource((R.drawable.paz652))
+            "ПАЗ655Т" -> picture.setImageResource((R.drawable.paz655t))
+            "ПАЗ665" -> picture.setImageResource((R.drawable.paz665))
+            "ПАЗ671" -> picture.setImageResource((R.drawable.paz671))
+            "ПАЗ672" -> picture.setImageResource((R.drawable.paz672))
+            "ПАЗТуристЛюкс" -> picture.setImageResource((R.drawable.pazturistlux))
+            "ПАЗ3201" -> picture.setImageResource((R.drawable.paz3201))
+            "ПАЗ3202" -> picture.setImageResource((R.drawable.paz3202))
+            "ПАЗ3203" -> picture.setImageResource((R.drawable.paz3203))
+
+            "УАЗ300" -> picture.setImageResource((R.drawable.uaz300))
+            "УАЗ450" -> picture.setImageResource((R.drawable.uaz450))
+            "УАЗ451" -> picture.setImageResource((R.drawable.uaz451))
+            "УАЗ456" -> picture.setImageResource((R.drawable.uaz456))
+            "УАЗ460" -> picture.setImageResource((R.drawable.uaz460))
+            "УАЗ468" -> picture.setImageResource((R.drawable.uaz468))
+            "УАЗ469" -> picture.setImageResource((R.drawable.uaz469))
+            "УАЗ471" -> picture.setImageResource((R.drawable.uaz471))
+            "УАЗ915" -> picture.setImageResource((R.drawable.uaz915))
+            //"" -> picture.setImageResource((R.drawable.))
+
+
+        }
+    }
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundnames"
+    tools:context=".Names">
+
+    <ImageButton
+        android:id="@+id/bazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        android:tag="baz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/baz" />
+
+    <TextView
+        android:id="@+id/bazText"
+        style="@style/myStyleText"
+        android:text="БАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bazButton" />
+
+    <ImageButton
+        android:id="@+id/belazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        android:tag="belaz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/belaz" />
+
+    <TextView
+        android:id="@+id/belazText"
+        style="@style/myStyleText"
+        android:text="БелАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/belazButton" />
+
+    <ImageButton
+        android:id="@+id/gazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="gaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/belazText"
+        app:srcCompat="@drawable/gaz" />
+
+    <TextView
+        android:id="@+id/gazText"
+        style="@style/myStyleText"
+        android:text="ГАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gazButton" />
+
+    <ImageButton
+        android:id="@+id/erazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="eraz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yaazText"
+        app:srcCompat="@drawable/eraz" />
+
+    <TextView
+        android:id="@+id/erazText"
+        style="@style/myStyleText"
+        android:text="ЕрАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erazButton" />
+
+    <ImageButton
+        android:id="@+id/zazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="zaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vazText"
+        app:srcCompat="@drawable/zaz" />
+
+    <TextView
+        android:id="@+id/zazText"
+        style="@style/myStyleText"
+        android:text="ЗАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zazButton" />
+
+    <ImageButton
+        android:id="@+id/vazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="vaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bazText"
+        app:srcCompat="@drawable/vaz" />
+
+    <TextView
+        android:id="@+id/vazText"
+        style="@style/myStyleText"
+        android:text="ВАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vazButton" />
+
+    <ImageButton
+        android:id="@+id/zilButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="zil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gazText"
+        app:srcCompat="@drawable/zil" />
+
+    <TextView
+        android:id="@+id/zilText"
+        style="@style/myStyleText"
+        android:text="ЗИЛ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zilButton" />
+
+    <ImageButton
+        android:id="@+id/ziuButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="ziu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erazText"
+        app:srcCompat="@drawable/ziu" />
+
+    <TextView
+        android:id="@+id/ziuText"
+        style="@style/myStyleText"
+        android:text="ЗИУ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ziuButton" />
+
+    <ImageButton
+        android:id="@+id/kazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="kaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ziuText"
+        app:srcCompat="@drawable/kaz" />
+
+    <TextView
+        android:id="@+id/kazText"
+        style="@style/myStyleText"
+        android:text="КАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kazButton" />
+
+    <ImageButton
+        android:id="@+id/kavzButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="kavz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zilText"
+        app:srcCompat="@drawable/kavz" />
+
+    <ImageButton
+        android:id="@+id/ijButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="ij"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zazText"
+        app:srcCompat="@drawable/ij" />
+
+    <TextView
+        android:id="@+id/ijText"
+        style="@style/myStyleText"
+        android:text="ИЖ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ijButton" />
+
+    <TextView
+        android:id="@+id/kavzText"
+        style="@style/myStyleText"
+        android:text="КАВЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kavzButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:onClick="nextNames"
+        android:text="Далее"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uazText" />
+
+    <ImageButton
+        android:id="@+id/yaazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        android:tag="jaaz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/jaaz" />
+
+    <TextView
+        android:id="@+id/yaazText"
+        style="@style/myStyleText"
+        android:text="ЯАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yaazButton" />
+
+    <ImageButton
+        android:id="@+id/seazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="seaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ijText"
+        app:srcCompat="@drawable/seaz" />
+
+    <TextView
+        android:id="@+id/seazText"
+        style="@style/myStyleText"
+        android:text="СеАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seazButton" />
+
+    <ImageButton
+        android:id="@+id/uazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="uaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kavzText"
+        app:srcCompat="@drawable/uaz" />
+
+    <ImageButton
+        android:id="@+id/uralButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        android:tag="ural"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kazText"
+        app:srcCompat="@drawable/ural" />
+
+    <TextView
+        android:id="@+id/uazText"
+        style="@style/myStyleText"
+        android:text="Уаз"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uazButton" />
+
+    <TextView
+        android:id="@+id/uralText"
+        style="@style/myStyleText"
+        android:text="Урал"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uralButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

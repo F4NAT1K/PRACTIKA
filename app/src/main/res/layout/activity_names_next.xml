@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundnamesnext"
+    tools:context=".NamesNext">
+
+    <ImageButton
+        android:id="@+id/kamazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/kamaz"
+        android:tag="kamaz"/>
+
+    <TextView
+        android:id="@+id/kamazText"
+        style="@style/myStyleText"
+        android:text="КАМАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kamazButton" />
+
+    <ImageButton
+        android:id="@+id/krazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        android:tag="kraz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/kraz" />
+
+    <ImageButton
+        android:id="@+id/lazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/laz"
+        android:tag="laz"/>
+
+    <ImageButton
+        android:id="@+id/liazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kamazText"
+        app:srcCompat="@drawable/liaz"
+        android:tag="liaz"/>
+
+    <ImageButton
+        android:id="@+id/luazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krazText"
+        app:srcCompat="@drawable/luaz"
+        android:tag="luaz"/>
+
+    <TextView
+        android:id="@+id/krazText"
+        style="@style/myStyleText"
+        android:text="КРАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/krazButton" />
+
+    <TextView
+        android:id="@+id/lazText"
+        style="@style/myStyleText"
+        android:text="ЛАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lazButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/myStyleText"
+        android:text="ЛИАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liazButton" />
+
+    <TextView
+        android:id="@+id/luazText"
+        style="@style/myStyleText"
+        android:text="ЛУАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luazButton" />
+
+    <ImageButton
+        android:id="@+id/mazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lazText"
+        app:srcCompat="@drawable/maz"
+        android:tag="maz"/>
+
+    <TextView
+        android:id="@+id/mazText"
+        style="@style/myStyleText"
+        android:text="МАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mazButton" />
+
+    <ImageButton
+        android:id="@+id/mzktButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/mzkt"
+        android:tag="mzkt"/>
+
+    <ImageButton
+        android:id="@+id/moazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luazText"
+        app:srcCompat="@drawable/moaz"
+        android:tag="moaz"/>
+
+    <ImageButton
+        android:id="@+id/moskvichButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mazText"
+        app:srcCompat="@drawable/moskvich"
+        android:tag="moskvich"/>
+
+    <TextView
+        android:id="@+id/mzktText"
+        style="@style/myStyleText"
+        android:text="МЗКТ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mzktButton" />
+
+    <TextView
+        android:id="@+id/moazText"
+        style="@style/myStyleText"
+        android:text="МоАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moazButton" />
+
+    <TextView
+        android:id="@+id/moskvichText"
+        style="@style/myStyleText"
+        android:text="Москвич"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moskvichButton" />
+
+    <ImageButton
+        android:id="@+id/namiButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mzktText"
+        app:srcCompat="@drawable/nami"
+        android:tag="nami"/>
+
+    <TextView
+        android:id="@+id/namiText"
+        style="@style/myStyleText"
+        android:text="НАМИ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namiButton" />
+
+    <ImageButton
+        android:id="@+id/pazButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moazText"
+        app:srcCompat="@drawable/paz"
+        android:tag="paz"/>
+
+    <ImageButton
+        android:id="@+id/rafButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onFullInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moskvichText"
+        app:srcCompat="@drawable/raf"
+        android:tag="raf"/>
+
+    <TextView
+        android:id="@+id/pazText"
+        style="@style/myStyleText"
+        android:text="ПАЗ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pazButton" />
+
+    <TextView
+        android:id="@+id/rafText"
+        style="@style/myStyleText"
+        android:text="РАФ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rafButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
